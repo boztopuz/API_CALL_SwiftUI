@@ -15,7 +15,7 @@ enum NetworkError: Error {
 
 class APICaller {
     
-    static func fetchData(complitionHandler: @escaping (_ result: Result<ModelElement, NetworkError>) -> Void){
+    static func callData(complitionHandler: @escaping (_ result: Result<[ModelElement], NetworkError>) -> Void){
         
         let convertUrltoString = NetworkConstanst.shared.serverAddress
         
@@ -29,7 +29,7 @@ class APICaller {
                 complitionHandler(.failure(.canNotParseDate))
                 return
             }
-            if let resultData = try? JSONDecoder().decode(ModelElement.self, from: data){
+            if let resultData = try? JSONDecoder().decode([ModelElement].self, from: data){
                 complitionHandler(.success(resultData))
             }
         }.resume()

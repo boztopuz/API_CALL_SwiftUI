@@ -14,6 +14,8 @@
 		96DC94D82A2D087A00D5359B /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC94D72A2D087A00D5359B /* APICaller.swift */; };
 		96DC94DA2A2D0ABB00D5359B /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC94D92A2D0ABB00D5359B /* NetworkConstants.swift */; };
 		96DC94DF2A2D0CAE00D5359B /* MockAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC94DE2A2D0CAE00D5359B /* MockAPIModel.swift */; };
+		96DC94E12A2D0F7200D5359B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC94E02A2D0F7200D5359B /* MainViewModel.swift */; };
+		96DC94E52A2D22E800D5359B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC94E42A2D22E800D5359B /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		96DC94D72A2D087A00D5359B /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		96DC94D92A2D0ABB00D5359B /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		96DC94DE2A2D0CAE00D5359B /* MockAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIModel.swift; sourceTree = "<group>"; };
+		96DC94E02A2D0F7200D5359B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		96DC94E42A2D22E800D5359B /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +61,11 @@
 		96DC94C82A2D05A100D5359B /* APICall */ = {
 			isa = PBXGroup;
 			children = (
+				96DC94E32A2D0FF900D5359B /* App */,
+				96DC94E22A2D0FEE00D5359B /* Views */,
 				96DC94DD2A2D0B7700D5359B /* Model */,
 				96DC94DC2A2D0B6C00D5359B /* ViewModels */,
 				96DC94DB2A2D0B4B00D5359B /* Network */,
-				96DC94C92A2D05A100D5359B /* APICallApp.swift */,
-				96DC94CB2A2D05A100D5359B /* ContentView.swift */,
 				96DC94CD2A2D05A200D5359B /* Assets.xcassets */,
 				96DC94CF2A2D05A200D5359B /* Preview Content */,
 			);
@@ -88,6 +92,7 @@
 		96DC94DC2A2D0B6C00D5359B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				96DC94E02A2D0F7200D5359B /* MainViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -98,6 +103,23 @@
 				96DC94DE2A2D0CAE00D5359B /* MockAPIModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		96DC94E22A2D0FEE00D5359B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96DC94CB2A2D05A100D5359B /* ContentView.swift */,
+				96DC94E42A2D22E800D5359B /* ImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96DC94E32A2D0FF900D5359B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				96DC94C92A2D05A100D5359B /* APICallApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +197,8 @@
 				96DC94D82A2D087A00D5359B /* APICaller.swift in Sources */,
 				96DC94DF2A2D0CAE00D5359B /* MockAPIModel.swift in Sources */,
 				96DC94CA2A2D05A100D5359B /* APICallApp.swift in Sources */,
+				96DC94E52A2D22E800D5359B /* ImageView.swift in Sources */,
+				96DC94E12A2D0F7200D5359B /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

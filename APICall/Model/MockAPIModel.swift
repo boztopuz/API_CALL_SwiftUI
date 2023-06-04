@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ModelElement: Codable {
+struct ModelElement: Hashable, Codable {
     let albumID, id: Int
     let title: String
     let url, thumbnailURL: String
