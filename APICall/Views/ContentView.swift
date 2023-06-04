@@ -11,6 +11,7 @@ struct ContentView: View {
     @StateObject var viewModel : MainViewModel = MainViewModel()
     @AppStorage("darkMode") private var isDark = false
     @State var showAlert = false
+    
     var body: some View {
         NavigationView {
             List{
@@ -22,7 +23,7 @@ struct ContentView: View {
                             Text(model.title)
                                 .bold()
                             Spacer()
-                            Text("\(model.id)")
+                            Text("ID: \(model.id)")
                                 .bold()
                         }
                     }.padding(3)
