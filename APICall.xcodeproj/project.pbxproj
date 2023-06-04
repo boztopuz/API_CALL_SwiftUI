@@ -11,6 +11,9 @@
 		96DC94CC2A2D05A100D5359B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC94CB2A2D05A100D5359B /* ContentView.swift */; };
 		96DC94CE2A2D05A200D5359B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DC94CD2A2D05A200D5359B /* Assets.xcassets */; };
 		96DC94D12A2D05A200D5359B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DC94D02A2D05A200D5359B /* Preview Assets.xcassets */; };
+		96DC94D82A2D087A00D5359B /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC94D72A2D087A00D5359B /* APICaller.swift */; };
+		96DC94DA2A2D0ABB00D5359B /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC94D92A2D0ABB00D5359B /* NetworkConstants.swift */; };
+		96DC94DF2A2D0CAE00D5359B /* MockAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC94DE2A2D0CAE00D5359B /* MockAPIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		96DC94CB2A2D05A100D5359B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		96DC94CD2A2D05A200D5359B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96DC94D02A2D05A200D5359B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96DC94D72A2D087A00D5359B /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		96DC94D92A2D0ABB00D5359B /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		96DC94DE2A2D0CAE00D5359B /* MockAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		96DC94C82A2D05A100D5359B /* APICall */ = {
 			isa = PBXGroup;
 			children = (
+				96DC94DD2A2D0B7700D5359B /* Model */,
+				96DC94DC2A2D0B6C00D5359B /* ViewModels */,
+				96DC94DB2A2D0B4B00D5359B /* Network */,
 				96DC94C92A2D05A100D5359B /* APICallApp.swift */,
 				96DC94CB2A2D05A100D5359B /* ContentView.swift */,
 				96DC94CD2A2D05A200D5359B /* Assets.xcassets */,
@@ -65,6 +74,30 @@
 				96DC94D02A2D05A200D5359B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96DC94DB2A2D0B4B00D5359B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				96DC94D92A2D0ABB00D5359B /* NetworkConstants.swift */,
+				96DC94D72A2D087A00D5359B /* APICaller.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		96DC94DC2A2D0B6C00D5359B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		96DC94DD2A2D0B7700D5359B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96DC94DE2A2D0CAE00D5359B /* MockAPIModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DC94DA2A2D0ABB00D5359B /* NetworkConstants.swift in Sources */,
 				96DC94CC2A2D05A100D5359B /* ContentView.swift in Sources */,
+				96DC94D82A2D087A00D5359B /* APICaller.swift in Sources */,
+				96DC94DF2A2D0CAE00D5359B /* MockAPIModel.swift in Sources */,
 				96DC94CA2A2D05A100D5359B /* APICallApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
